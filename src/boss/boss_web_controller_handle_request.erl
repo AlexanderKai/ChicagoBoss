@@ -19,6 +19,7 @@
 -ifdef(TEST).
 -compile(export_all).
 -endif.
+-compile([tuple_calls]).
 
 -include("boss_web.hrl").
 

@@ -23,6 +23,8 @@
 
 -include("boss_web.hrl").
 
+-compile([tuple_calls]).
+
 start_link() ->
     init_master_node().
 

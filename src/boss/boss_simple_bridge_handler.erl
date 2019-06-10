@@ -20,6 +20,7 @@
 
 -record(state, {websocket_id, session_id, service_url}).
 
+-compile([tuple_calls]).
 
 run(Bridge) ->
     try

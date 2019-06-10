@@ -22,6 +22,8 @@
   to_json/1 %, from_json/1
 ]).
 
+-compile([tuple_calls]).
+
 start() ->
     DBOptions = lists:foldl(fun(OptName, Acc) ->
                 case application:get_env(OptName) of

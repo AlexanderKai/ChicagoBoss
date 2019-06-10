@@ -22,6 +22,7 @@
         adapter,
         connection
     }).
+-compile([tuple_calls]).
 
 start_link() ->
     start_link([]).

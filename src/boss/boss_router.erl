@@ -20,6 +20,8 @@
 -export([find_application_for_path/3]).
 -export([reload/1, route/2, unroute/6, handle/2, get_all/1, set_controllers/2]).
 
+-compile([tuple_calls]).
+
 %%
 %% API Functions
 %%

@@ -25,6 +25,8 @@
 
 -define(SERVER, ?MODULE).
 
+-compile([tuple_calls]).
+
 -record(state, {handler, internal}).
 %% TODO: Fix specs (They are real bugs I think)
 -spec broadcast(_,_)        -> 'ok'.

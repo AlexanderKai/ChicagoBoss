@@ -13,6 +13,8 @@
 -module(boss_controller_lib).
 -export([convert_params_to_tokens/3]).
 
+-compile([tuple_calls]).
+
 convert_params_to_tokens(Variables, ControllerModule, Action) ->
     DummyController = apply(ControllerModule, new, lists:seq(1, proplists:get_value(new, ControllerModule:module_info(exports)))),
     Routes = case lists:member({'_routes', 1}, ControllerModule:module_info(exports)) of

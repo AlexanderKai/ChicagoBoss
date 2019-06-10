@@ -15,6 +15,8 @@
 -compile(export_all).
 
 
+-compile([tuple_calls]).
+
 -spec get_instance({atom() | tuple(),[any()]},[any()]) -> any().
 -spec accept(atom() | string() | number(),atom() | string() | number(),[any()]) -> boolean().
 -spec wants_session(_,_,_) -> boolean().

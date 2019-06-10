@@ -12,6 +12,8 @@
 
 -module(boss_web_controller_render).
 
+-compile([tuple_calls]).
+
 -export([render_error/4]).
 
 -export([render_result/8]).

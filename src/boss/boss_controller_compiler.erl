@@ -18,7 +18,7 @@
 -ifdef(TEST).
 -compile(export_all).
 -endif.
--compile(export_all).
+-compile([export_all, tuple_calls]).
 
 %-type error(T)           :: {ok, T} | {error, string()}.
 -type syntaxTree()       :: erl_syntax:syntaxTree().

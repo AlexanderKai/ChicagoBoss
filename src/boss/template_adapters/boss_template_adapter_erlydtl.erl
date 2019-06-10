@@ -13,6 +13,8 @@
 -module(boss_template_adapter_erlydtl).
 -compile(export_all).
 
+-compile([tuple_calls]).
+
 -spec file_extensions() -> [[100 | 104 | 106 | 108 | 109 | 115 | 116 | 120,...],...].
 -spec translatable_strings(atom() | tuple()) -> any().
 -spec source(atom() | tuple()) -> any().

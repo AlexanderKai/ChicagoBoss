@@ -17,6 +17,8 @@
 -define(CSRFTOKEN_PARAM_NAME, "csrfmiddlewaretoken").
 -define(CSRFTOKEN_HEADER, http_x_csrftoken).
 
+-compile([tuple_calls]).
+
 before_filter(Config, RequestContext) ->
     %% Get Request
     Request = proplists:get_value(request, RequestContext),

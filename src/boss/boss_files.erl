@@ -36,6 +36,7 @@
 -compile(export_all).
 -endif.
 
+-compile([tuple_calls]).
 -type input_string() :: string().
 -spec root_priv_dir(_) -> input_string().
 -spec websocket_mapping(_,_,[any()]) -> any().

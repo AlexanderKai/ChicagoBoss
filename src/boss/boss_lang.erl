@@ -21,6 +21,8 @@
          update_po/1,
          update_po/4]).
 
+-compile([tuple_calls]).
+
 -type application() :: types:application().
 -type lang() ::types:language().
 -type mode() :: all|filled.

@@ -32,6 +32,8 @@
 -compile(export_all).
 -endif.
 
+-compile([tuple_calls]).
+
 -type module_types() :: [{'controller_modules' | 'lib_modules' |
                           'mail_modules' | 'model_modules' | 'test_modules' |
                           'view_lib_helper_modules' | 'view_lib_tags_modules' | 'view_modules'

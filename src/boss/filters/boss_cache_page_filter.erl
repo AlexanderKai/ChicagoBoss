@@ -17,6 +17,8 @@
 -define(PAGE_CACHE_PREFIX, "boss_web_controller_page").
 -define(PAGE_CACHE_DEFAULT_TTL, 3600).
 
+-compile([tuple_calls]).
+
 config_key() -> cache.
 config_default_value() -> none.
 
